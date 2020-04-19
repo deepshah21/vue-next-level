@@ -80,7 +80,11 @@ check EventService.js
 
     we have implemented in router.js for global 
 
-Now How we can remove vuex store dependencies from components
+    Now How we can remove vuex store dependencies from components
+     we have made changes in event.js for returning event promise in fetchEvent method
+     we have made changes in component by removing store and progressbar, and add props only
+     in router.js , we have changes in '/event/:id' path where we have added store and progress bar
+     and dispatch Action and set event in route params
 
 
 ## Following along?
