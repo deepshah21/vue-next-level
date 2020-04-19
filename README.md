@@ -6,15 +6,16 @@ json-server --watch db.json
 npm install
 npm run serve
 
-## next level vue 
-1. progress bars
-2. in-component route guard
-3. global and pre-route guard
-4. error handling
-5. reusable form components
-6. form validation with vuelidate
-7. mixins
-8. filters
+## next level vue
+
+  1. progress bars
+  2. in-component route guard
+  3. global and pre-route guard
+  4. error handling
+  5. reusable form components
+  6. form validation with vuelidate
+  7. mixins
+  8. filters
 
 1. Nprogres bar and axios interceptors
 npm install nprogress
