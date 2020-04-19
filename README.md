@@ -24,37 +24,39 @@ check EventService.js
 
 2. in-component route guard
     lifecycle hooks
-        1. beforeCreate()
-        2. created()
-        3. beforeMount()
-        4. Mounted()
-        5. beforeUpdated()
-        6. updated()
-        7. beforeDestroy()
-        8. destroyed()
+
+    1. beforeCreate()
+    2. created()
+    3. beforeMount()
+    4. Mounted()
+    5. beforeUpdated()
+    6. updated()
+    7. beforeDestroy()
+    8. destroyed()
 
     but using route navigation guard we get three more hooks
-        1. beforeRouteEnter(routeTo,routeFrom,next)
-            called before component is created
-            Doesn't have access to this
-        2. beforeRouteUpdate(routeTo,routeFrom,next
-            called when route change,but still using same component,
-            have access to this
-        3. beforeRouteLeave(routeTo,routeFrom,next)
-            called when this component is navigated away from
-            have access to this
+    1. beforeRouteEnter(routeTo,routeFrom,next)
+        called before component is created
+        Doesn't have access to this
+    2. beforeRouteUpdate(routeTo,routeFrom,next
+        called when route change,but still using same component,
+        have access to this
+    3. beforeRouteLeave(routeTo,routeFrom,next)
+        called when this component is navigated away from
+        have access to this
+
     here next is function which will called.
         next() --> confirm navigation
         next(false) --> cancel navigation
         next('/')  --> redirect to path
         next({name:'event-list'}) --> Redirect to this named path
   
-  here we can notice that eventShow component did not see progressBar 
-  We have three steps to implement   
-    1.Start the progress bar when routing to the component.
-    2.Make the API call, using the fetchEvent action.
-    3.When API returns finish progress bar.
-    4.Render the component template.
+    here we can notice that eventShow component did not see progressBar 
+    We have three steps to implement   
+    1. Start the progress bar when routing to the component.
+    2. Make the API call, using the fetchEvent action.
+    3. When API returns finish progress bar.
+    4. Render the component template.
 
 3. Global Route and per-route guards to removing vuex from componenets
     in router.js we have created router instance 
@@ -67,16 +69,17 @@ check EventService.js
 
     so in hooks it will look like
     https://router.vuejs.org/guide/advanced/navigation-guards.html#per-route-guard
-        1. router.beforeEach()
-        2. beforeEnter()  // inside the router instance
-        2. beforeRouteEnter()
-        3. router.afterEach()
-        4. beforeCreate
-        5. created()
+
+    1. router.beforeEach()
+    2. beforeEnter()  // inside the router instance
+    2. beforeRouteEnter()
+    3. router.afterEach()
+    4. beforeCreate
+    5. created()
 
     we have implemented in router.js for global 
 
-Now How we can remove vuex sttore dependencies from components
+Now How we can remove vuex store dependencies from components
 
 
 ## Following along?
