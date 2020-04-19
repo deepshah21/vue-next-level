@@ -91,6 +91,16 @@ check EventService.js
     2. use beforeRouteEnter and beforeRouteUpdate in eventList
     3. we need to modify router.js to sent in currentPage as props
 
+## 5. error handling 404 page
+    1. NotFound.vue component
+    2. add into router.js
+    3. add-catch-all router 
+
+    Question is for event/:id it wont wotk so that time we have to replace catch with 
+    $route.push('/404')
+
+    
+
 ## Following along?
 
 We encourage you to follow the course on Vue Mastery, and code along with us. This course has tags representing the start and finish of each level, just in case you get stuck. Here's the start and ending code of each lesson, if you'd like to download them.
