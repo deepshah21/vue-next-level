@@ -103,6 +103,33 @@ check EventService.js
     create BaseInput component and import it into createEvent.vue page
     and also see or $attr and inheritAttrs property
 
+    for multiselect check for vue-multi select componenets
+    we have to use v-on="$listeners" in baseComponent so we can called on-click methods
+
+## 7. form validation
+    npm install vuelidate
+    in main.js 
+        import Vuelidate from 'vuelidate'
+        Vue.use(Vuelidate)
+    read more from the plugins
+
+## 8. mixins
+    if ther is 2 components with similar functionality
+
+    mixins code run before the components code in lifecycle hooks
+    in mixins we can add data propery as well but if it conflicts with componenet data than component's data have more priority than mixins' data
+
+    we can add mixins globaly in applications as well
+    in main.js 
+        Vue.mixin({
+            mounted(){
+                console.log("I am mixed into every components")
+            }
+        })
+
+    so mixins can be use in baseComponents as they have common methods
+    mixins we can use $listeners also
+
 
 ## Following along?
 

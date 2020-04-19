@@ -13,7 +13,7 @@
         <label>Title</label>
         <input v-model="event.title" type="text" placeholder="Add an event title"/>
       </div> -->
-      <BaseInput lable="Title" :value="value" v-model="event.title"/>
+      <BaseInput lable="Title" v-model="event.title"/>
 
       <div class="field">
         <label>Description</label>
