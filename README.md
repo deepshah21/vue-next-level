@@ -130,6 +130,21 @@ check EventService.js
     so mixins can be use in baseComponents as they have common methods
     mixins we can use $listeners also
 
+## 9. filters
+    here filters are the same as we used in angular.js
+    which can reside in components
+    we can also pass the value and another argument in the filters
+
+    add filters in filters directory example date.js
+
+    add below line into main.js
+        import DateFilter from './filters/date'
+        Vue.filter('date', DateFilter)
+
+    in EventShow.vue 
+     <span class="eyebrow">@{{ event.time }} on {{ event.date | date }}</span>
+    in EventCard.vue
+     <span class="eyebrow">@{{ event.time }} on {{ event.date | date }}</span>
 
 ## Following along?
 
