@@ -14,7 +14,13 @@ const router = new Router({
     {
       path: '/',
       name: 'event-list',
-      component: EventList
+      component: EventList,
+      props: route => ({
+        page: route.params.page,
+        perPage: route.params.perPage,
+        events: route.params.events,
+        eventTotal: route.params.eventTotal
+      })
     },
     {
       path: '/event/create',

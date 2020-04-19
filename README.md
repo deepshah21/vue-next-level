@@ -86,6 +86,10 @@ check EventService.js
      in router.js , we have changes in '/event/:id' path where we have added store and progress bar
      and dispatch Action and set event in route params
 
+## 4. in pagination componenet is reused where progressbar doesn't work properly
+    1. we have to change page index into state
+    2. use beforeRouteEnter and beforeRouteUpdate in eventList
+    3. we need to modify router.js to sent in currentPage as props
 
 ## Following along?
 
