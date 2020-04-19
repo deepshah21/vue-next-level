@@ -99,7 +99,10 @@ check EventService.js
     Question is for event/:id it wont wotk so that time we have to replace catch with 
     $route.push('/404')
 
-    
+## 6. reusable component
+    create BaseInput component and import it into createEvent.vue page
+    and also see or $attr and inheritAttrs property
+
 
 ## Following along?
 
