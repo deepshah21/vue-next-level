@@ -17,13 +17,13 @@ npm run serve
   7. mixins
   8. filters
 
-1. Nprogres bar and axios interceptors
+## 1. Nprogres bar and axios interceptors
 npm install nprogress
 have to add  import 'nprogress/nprogress.css' in main.js 
 in service create axios interceptors for request and response 
 check EventService.js
 
-2. in-component route guard
+## 2. in-component route guard
     lifecycle hooks
 
     1. beforeCreate()
@@ -59,7 +59,7 @@ check EventService.js
     3. When API returns finish progress bar.
     4. Render the component template.
 
-3. Global Route and per-route guards to removing vuex from componenets
+## 3. Global Route and per-route guards to removing vuex from componenets
     in router.js we have created router instance 
     our guard will call on router object
 
